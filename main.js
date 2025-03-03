@@ -1,4 +1,3 @@
-"use strict";
 
 const shareBtn = document.querySelector(".social__arrow");
 const active = document.querySelector(".social__popup");
