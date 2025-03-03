@@ -94,13 +94,16 @@ h1, p {
 
 body {
     background-color: var(--clr-light-grayish-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem 0 1rem;
 }
 
 main {
-    border: 2px solid;
-    margin: 3rem auto;
-    max-width: 90%;
     border-radius: 1rem;
+    position: relative;
+    
 }
 
 .hero-image img {
@@ -114,12 +117,13 @@ main {
     background-color: white;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+
 }
 
 .content__headline {
     margin-bottom: 2rem;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     text-wrap: wrap;
 }
@@ -163,6 +167,36 @@ main {
   cursor: pointer;
   padding: 0.7rem;
   border-radius: 50%;
+}
+
+
+.social__popup {
+  background-color: var(--clr-dark-grayish-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  max-width: 327px;
+  bottom: 0;
+}
+
+.social__icons {
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+}
+
+.social__icons p {
+  color: var(--clr-grayish-blue);
+  font-weight: 500;
+}
+
+.active-state {
+  display: none;
 }
 
 @media (min-width: 48rem) and (max-width: 63.9rem) {
